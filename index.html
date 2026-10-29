@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal for an Ecological Volunteer Movement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Portal for an Ecological Volunteer Movement">
+      <!-- Международный символ переработки (три стрелки по кругу) -->
+      <svg class="recycle" viewBox="0 0 100 100" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M38 22 L50 10 L62 22 M50 10 L50 40"/>
+          <path d="M82 58 L88 74 L72 78 M88 74 L62 58"/>
+          <path d="M18 58 L12 74 L28 78 M12 74 L38 58"/>
+        </g>
+      </svg>
+      <span>Eco Volunteer Portal</span>
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list" id="menu">
+        <li><a href="#eco-actions">Eco-Actions</a></li>
+        <li><a href="#collection-points">Collection Points</a></li>
+        <li><a href="#eco-tips">Eco-Tips</a></li>
+        <li><a href="#volunteer">Become a Volunteer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" id="eco-actions" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Let's Make Our City Cleaner Together</h1>
+        <p>Join neighbours who sort waste, clean parks and teach others to recycle.</p>
+        <a class="btn btn-cta" href="#volunteer">I Want to Join the Clean-up Day</a>
+      </div>
+    </section>
+
+    <section class="section" id="collection-points" aria-labelledby="points-title">
+      <h2 id="points-title">Collection Points</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Central Park Point</h3>
+          <p class="address">12 Abay Avenue</p>
+          <p>Mon–Sat, 09:00–18:00</p>
+          <ul class="tags">
+            <li>Plastic</li><li>Glass</li><li>Paper</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Green Yard Point</h3>
+          <p class="address">45 Dostyk Street</p>
+          <p>Tue, Thu, Sat, 10:00–16:00</p>
+          <ul class="tags">
+            <li>Plastic</li><li>Paper</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Riverside Point</h3>
+          <p class="address">7 Gogol Street</p>
+          <p>Daily, 08:00–20:00</p>
+          <ul class="tags">
+            <li>Glass</li><li>Paper</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="eco-tips" aria-labelledby="tips-title">
+      <h2 id="tips-title">Eco-Tips</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Rinse before you sort</h3>
+          <p>Clean bottles and jars keep the rest of the paper and plastic recyclable.</p>
+        </article>
+        <article class="card">
+          <h3>Carry your own bag</h3>
+          <p>One reusable bag replaces hundreds of plastic ones over its life.</p>
+        </article>
+        <article class="card">
+          <h3>Flatten cardboard</h3>
+          <p>Flat boxes take less space in the container and in the truck.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="volunteer" aria-labelledby="form-title">
+      <h2 id="form-title">Become a Volunteer</h2>
+      <form class="form" action="#" method="get">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required minlength="2" autocomplete="name">
+
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" placeholder="18" min="16" max="99" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="+7 700 000 00 00" required autocomplete="tel">
+
+        <label for="district">District</label>
+        <input id="district" name="district" type="text" placeholder="Your district" required>
+
+        <label for="skill">Competency</label>
+        <select id="skill" name="skill" required>
+          <option value="" selected disabled>Choose one</option>
+          <option value="transport">Transport</option>
+          <option value="resources">Resources</option>
+          <option value="manual-labor">Manual labor</option>
+        </select>
+
+        <button class="btn" type="submit">Send application</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section class="stats" aria-label="Recycling statistics">
+      <p><strong>12 400 kg</strong> paper collected</p>
+      <p><strong>8 150 kg</strong> plastic collected</p>
+      <p><strong>5 600 kg</strong> glass collected</p>
+    </section>
+
+    <nav aria-label="Environmental organizations">
+      <ul class="footer-links">
+        <li><a href="https://www.wwf.org" target="_blank" rel="noopener">WWF</a></li>
+        <li><a href="https://www.greenpeace.org" target="_blank" rel="noopener">Greenpeace</a></li>
+        <li><a href="https://www.unep.org" target="_blank" rel="noopener">UNEP</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn btn-theme" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+
+    <p class="legal">© 2026 Portal for an Ecological Volunteer Movement. Non-profit community project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
